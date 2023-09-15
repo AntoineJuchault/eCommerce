@@ -1,0 +1,108 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar */
+.navbar {
+    background-color: #333; /* Couleur de fond de la navbar */
+    padding: 10px; /* Espace intérieur de la navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.navbar-logo {
+    /* Styles pour le logo */
+}
+  
+.navbar-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+.navbar-links a {
+    color: #fff; 
+    text-decoration: none; 
+}
+  
+/* Style au survol (facultatif) */
+
+
+.navbar-links a:hover {
+    color: #ffcc00; 
+}
+
+.navbar-links li {
+    display: inline;
+    margin-right: 20px; 
+}
+  
+.navbar-links li:last-child {
+    margin-right: 0; 
+}
+  
+/* end of the nav bar */
+
+/* product-cards-home-page*/
+#product-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Six colonnes égales sur la même ligne */
+    gap: 10px;
+}
+
+.product-card-inner {
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 200px; /* Réduisez la largeur maximale des cartes */
+}
+
+#product-image {
+    max-width: 100%; /* Largeur maximale pour les images */
+}
+#title-product,
+#description-product,
+#price-product {
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+/* end of the product-cards-home-page*/
+
+
+.product-show {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Six colonnes égales sur la même ligne */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.product-details {
+    text-align: center;
+    max-width: 550px;
+    padding: 10px;
+}
+  
+.product-image img  {
+    max-width: 70%;
+    padding: 10px;
+    margin-right: 20px; 
+}

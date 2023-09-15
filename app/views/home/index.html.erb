@@ -1,0 +1,12 @@
+<div id="product-cards">
+    <% @products.each do |product| %>
+        <div class="product-card-inner">
+            <p id="title-product"><%= product.title %></p>
+            <% if product.image.attached? %>
+                <%= image_tag product.image, id: "product-image" %>
+            <% end %>
+            <p id="description-product"><%= product.description %></p>
+            <p id="price-product"><%= (product.price) %>€</p>
+        </div>
+    <% end %>
+</div>
