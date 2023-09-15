@@ -13,6 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+:root {
+    --navbar-color: #a126a1;
+    --background-color:;
+    --text-color:;
+    --cards-color:;
+    --hover-color: #f6d426;
+}
 body {
     margin: 0;
     padding: 0;
@@ -20,7 +28,7 @@ body {
 
 /* nav bar */
 .navbar {
-    background-color: #333; /* Couleur de fond de la navbar */
+    background-color: var(--navbar-color); /* Couleur de fond de la navbar */
     padding: 10px; /* Espace intérieur de la navbar */
     display: flex;
     justify-content: space-between;
@@ -28,7 +36,6 @@ body {
 }
   
 .navbar-logo {
-    /* Styles pour le logo */
 }
   
 .navbar-links {
@@ -44,10 +51,6 @@ body {
   
 /* Style au survol (facultatif) */
 
-
-.navbar-links a:hover {
-    color: #ffcc00; 
-}
 
 .navbar-links li {
     display: inline;
