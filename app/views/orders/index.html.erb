@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      <th>Utilisateur</th>
+      <th>Nombre de Produits</th>
+      <th>État de la Livraison</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @orders.each do |order| %>
+      <tr>
+        <td><%= order.user.email %></td>
+        <td><%= order.product_count %></td>
+        <td><%= order.delivery_status %></td>
+        <td>
+          <%= link_to "Afficher", order %>
+          <%= link_to "Éditer", edit_order_path(order) %>
+          <%= link_to "Supprimer", order, method: :delete, data: { confirm: "Êtes-vous sûr de vouloir supprimer cette commande ?" } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

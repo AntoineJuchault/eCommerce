@@ -1,12 +1,17 @@
 <div id="product-cards">
-    <% @products.each do |product| %>
-        <div class="product-card-inner">
-            <p id="title-product"><%= product.title %></p>
-            <% if product.image.attached? %>
-                <%= image_tag product.image, id: "product-image" %>
-            <% end %>
-            <p id="description-product"><%= product.description %></p>
-            <p id="price-product"><%= (product.price) %>€</p>
-        </div>
-    <% end %>
+  <% @products.each do |product| %>
+    <div class="product-card-inner">
+      <p id="title-product"><%= product.title %></p>
+      <% if product.image.attached? %>
+        <%= image_tag product.image, id: "product-image" %>
+      <% end %>
+      <p id="description-product"><%= product.description %></p>
+      <p id="price-product"><%= number_to_currency(product.price, unit: '€') %></p>
+      <%= simple_form_for @order, url: orders_path do |f| %>
+            <%= f.input :product_count, as: :hidden, input_html: { value: 1 } %>
+            <%= f.input :delivery_status, as: :hidden, input_html: { value: 'En Attente' } %>
+        <%= f.submit "Acheter", class: "order-button" %>
+        <% end %>
+    </div>
+  <% end %>
 </div>
