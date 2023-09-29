@@ -14,8 +14,6 @@ class OrdersController < ApplicationController
 
   private
 
-  private
-
   def order_params
     params.require(:order).permit(:user_id, :product_count, :delivery_status, :product_id)
   end

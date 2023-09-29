@@ -15,25 +15,27 @@
  */
 
 :root {
- 	--navbar-color: #a126a1;
- 	--background-color:;
-  --text-color: #f2f2ff;
+	--navbar-color: #a126a1;
+ 	--background-color: ;
+ 	--text-color: #f2f2ff;
  	--cards-color: #eaf2f1;
  	--hover-color: #e6ddb4;
-  --form-color:#f7f4e5; 
-  --btn-color: #27c827;
+  	--form-color:#f7f4e5; 
+ 	--btn-color: #27c827;
 
 }
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+  	padding: 0;
 }
-@import 'navbar';
+	@import 'navbar';
 
-@import "product-home-page";
+	@import "product-home-page";
 
-@import "product-show";
+	@import "product-show";
 
-@import "add-product";
+	@import "add-product";
 
-@import "logIn";
+	@import "logIn";
+	
+	@import "signUp";
