@@ -1,0 +1,41 @@
+
+#add-product-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   }
+   .form-group {
+    margin-bottom: 10px;
+   }
+   
+   textarea {
+    max-width: 50em;
+    height: 20em;
+    resize: none;
+   }
+   
+   .form-control {
+    width: 98%;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: var(--form-color);
+   }
+   
+   .form-control:focus {
+    border-color: #4387fd;
+   }
+   
+   #btn-product {
+    display: flex;
+    justify-content: space-between;
+    border: none; 
+   }
+   #button-create-product {
+     border: none; 
+     background-color: var(--btn-color);
+     color: var(--text-color);
+   }
+   

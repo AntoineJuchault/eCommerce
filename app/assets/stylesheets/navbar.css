@@ -1,0 +1,35 @@
+.navbar {
+    background-color: var(--navbar-color); /* Couleur de fond de la navbar */
+    padding: 10px; /* Espace intérieur de la navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 150px;
+    position: relative;
+  }
+    
+  
+  .navbar-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+  }
+  .navbar-links li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .navbar-links li a {
+    text-decoration: none;
+      color: var(--text-color);
+    padding: 10px 15px;
+    display: block;
+  }
+  #panier-image {
+    height: 20px; 
+    max-width: 100px;
+    display: inline-block; 
+  }

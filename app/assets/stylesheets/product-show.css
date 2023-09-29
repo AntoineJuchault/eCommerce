@@ -1,0 +1,36 @@
+
+.product-show {
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    max-width: 100%;
+    justify-content: space-between;
+  }
+    
+    
+  .product-show-image {
+    margin-right: 20px; 
+  }
+    
+  
+  .product-details h1 {
+    font-size: 24px;
+    margin: 0;
+    text-align: center;
+  
+  }
+  
+  .product-details p {
+    font-size: 16px;
+  }
+  
+  .product-show-image img {
+    width: 200px; 
+    height: 150px; 
+  }
+  
+  
+  #new-product {
+    text-align: center;
+  }
