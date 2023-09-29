@@ -18,12 +18,14 @@
         <ul class="navbar-links">
           <li><%= link_to 'Accueil', root_path %></li>
           <% if user_signed_in? %>
-            <li><%= link_to 'Déconnexion', destroy_user_session_path, method: :delete %></li>
+            <li><%= button_to 'Déconnexion', destroy_user_session_path, method: :delete %></li>
             <li><%= link_to 'Ajouter un produit', new_product_path %></li>
           <% else %>
             <li><%= link_to 'Inscription', new_user_registration_path %></li>
             <li><%= link_to 'Connexion', new_user_session_path %></li>
+            
           <% end %>
+          <%= image_tag "carte.png", id: "panier-image" %>
         </ul>
     </nav>
 

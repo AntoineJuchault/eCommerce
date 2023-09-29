@@ -1,3 +1,9 @@
+<div id="image-with-text">
+</div>
+
+
+
+
 <div id="product-cards">
   <% @products.each do |product| %>
     <div class="product-card-inner">
@@ -10,7 +16,7 @@
       <%= simple_form_for @order, url: orders_path do |f| %>
             <%= f.input :product_count, as: :hidden, input_html: { value: 1 } %>
             <%= f.input :delivery_status, as: :hidden, input_html: { value: 'En Attente' } %>
-        <%= f.submit "Acheter", class: "order-button" %>
+            <%= f.submit "Acheter", class: "order-button" %>
         <% end %>
     </div>
   <% end %>
