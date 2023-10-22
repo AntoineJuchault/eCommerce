@@ -1,13 +1,4 @@
-<table>
-  <thead>
-    <tr>
-      <th>Utilisateur</th>
-      <th>Nombre de Produits</th>
-      <th>État de la Livraison</th>
-      <th>Action</th>
-    </tr>
-  </thead>
-  <tbody>
+<div id = " order ">
     <% @orders.each do |order| %>
       <tr>
         <td><%= order.user.email %></td>
@@ -21,4 +12,4 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</div>
